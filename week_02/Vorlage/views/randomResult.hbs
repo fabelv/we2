@@ -1,0 +1,16 @@
+<div class="result-section">
+    <h2>Input</h2>
+    <p>Number of random numbers: {{input.count}}</p>
+    <p>Minimum: {{input.min}}</p>
+    <p>Maximum: {{input.max}}</p>
+
+    <h2>Result</h2>
+    <div class="numbers">
+        {{#each result as |number|}}
+            <span>{{number}}</span>
+        {{/each}}
+    </div>
+
+    <a href="/" class="btn back-btn">Back</a>
+</div>
+
