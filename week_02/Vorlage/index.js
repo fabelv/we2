@@ -29,7 +29,8 @@ app.use(randomRoutes);
 
 // 404 handler
 app.use((req, res, next) => {
-    res.status(404).render('error', { title: '404 Not Found', message: 'Page not found' });
+    let error = new Error("Page not Found")
+    next(error);
 });
 
 // error middleware
